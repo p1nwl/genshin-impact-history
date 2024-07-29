@@ -13,6 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -24,10 +30,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  display: grid;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  min-block-size: 100dvh;
   flex-direction: row;
   align-items: flex-start;
 }
@@ -54,10 +59,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-.random-hero {
-  margin-bottom: 20px;
 }
 
 @media (prefers-color-scheme: light) {

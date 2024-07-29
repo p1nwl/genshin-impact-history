@@ -1,17 +1,19 @@
 #root {
-  max-width: 1280px;
-  margin: 10px 10px;
-  padding: 0;
   background-color: #242424;
   color: white;
-}
-
-#root > h1 {
-  width: 50%;
+  width: 100%;
+  height: 100dvh;
+  padding: 1rem;
 }
 
 p {
   margin: 0;
+}
+
+.hero-card-page {
+  height: 100vh;
+  width: 100%;
+  padding: 10px;
 }
 
 .hero-card {
@@ -75,4 +77,8 @@ p {
   color: #999;
   display: flex;
   align-items: center;
+}
+
+.back-to-home-button {
+  margin-bottom: 1rem;
 }
